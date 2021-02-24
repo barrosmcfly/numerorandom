@@ -23,7 +23,7 @@ dotenv.config()
 app.use('/api', randomRoutes )
 
 const run = async () =>{
-    await app.listen(3000)
+    await app.listen(process.env.PORT || 3000)
     console.log('Servidor arrancado')
 }
 
